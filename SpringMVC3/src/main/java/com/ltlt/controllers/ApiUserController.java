@@ -29,13 +29,13 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @RestController
 @RequestMapping("/api")
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:3000")
 public class ApiUserController {
 
     @Autowired
     private UserService userDetailsService;
 
-    @PostMapping(path = "/users", 
+    @PostMapping(path = "/register", 
             consumes = MediaType.MULTIPART_FORM_DATA_VALUE, 
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> create(@RequestParam Map<String, String> params, @RequestParam(value = "avatar") MultipartFile avatar) {

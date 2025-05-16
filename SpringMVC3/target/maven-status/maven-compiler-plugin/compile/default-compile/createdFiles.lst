@@ -3,6 +3,7 @@ com\ltlt\services\impl\UserServiceImpl.class
 com\ltlt\pojo\User.class
 com\ltlt\utils\JwtUtils.class
 com\ltlt\configs\SecurityWebApplicationInitializer.class
+com\ltlt\filters\JwtFilter.class
 com\ltlt\configs\ThymeleafConfig.class
 com\ltlt\pojo\Feedback.class
 com\ltlt\pojo\Visitorcard.class
